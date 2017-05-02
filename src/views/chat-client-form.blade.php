@@ -1,8 +1,8 @@
 <script>
-    var ids = 51;
+    var ids = 98;
 </script>
+
 <div id="supportchat-app">
     <chat-log v-bind:messages="messages"></chat-log>
-    <chat-composer v-on:sendmessage="addMessage" username="hardcoded"></chat-composer>
+    <chat-client-composer id="client-chat" v-on:clientsendmessage="addMessage" v-bind:username="username"></chat-client-composer>
 </div>
-

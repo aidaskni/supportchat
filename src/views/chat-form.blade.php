@@ -1,7 +1,8 @@
 <div id="chat-start-form-container">
-    <div id="hide">
-        <span class="hide-minus glyphicon glyphicon-minus"></span>
+    <div id="chat-start-form-header">
+        <span id="hide" class="hide-minus glyphicon glyphicon-minus"></span>
     </div>
+    <div id="chat-start-form-window">
         <form id="chat-start-form" method="post" action="{{route('conversations.create')}}">
             <div class="form-group">
                 <label for="name" class="col-2 col-form-label">Name</label>
@@ -21,7 +22,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
+    </div>
+    <div id="chat-window">
         @include('supportchat.chat-client-form')
+    </div>
+
+
 </div>
 
